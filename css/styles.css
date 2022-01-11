@@ -25,7 +25,7 @@
   --partlogo-text-color-footer: #ffffff;
   --hero-text-color: #ffffff;
   --addresse-text-color: #ffffff;
-  --contacts-text-color: rgba(255, 255, 255, 0.6);
+  --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
   --accent-text-color: #ffffff;
   --primary-bg-color: #e5e5e5;
   --secondary-bg-color: #2f303a;
@@ -38,34 +38,33 @@
 }
 
 /* Общие свойства */
-ul {
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+.list {
   list-style: none;
 }
+.link:focus,
+.link:hover {
+  color: var(--hover-text-color);
+}
 a {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 p {
   color: var(--secondary-text-color);
 }
 
-body {
-  background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
-}
-header {
-  background-color: var(--header-bg-color);
-}
-footer {
-  background-color: var(--secondary-bg-color);
-}
-
 /* Buttons */
+
 .button {
   background-color: var(--button-bg-color);
   color: var(--primary-text-color);
 }
-.button.primary,
+.hero-button,
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
@@ -75,23 +74,19 @@ footer {
 /* Стили главной страницы */
 
 /* Header */
+
+.header {
+  background-color: var(--header-bg-color);
+}
 .logo {
   color: var(--logo-text-color);
 }
-.header {
+.hdr {
   color: var(--partlogo-text-color-header);
 }
-/* Site-nav */
-.site-nav .link {
-  color: var(--primary-text-color);
+.header-contact {
+  color: var(--secondary-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus,
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: var(--hover-text-color);
-}
-/* Auth-nav */
 
 /* Main */
 
@@ -100,28 +95,31 @@ footer {
   background-color: var(--secondary-bg-color);
   color: var(--hero-text-color);
 }
-/* Developers */
+/* Наша команда*/
 .developers {
   background-color: var(--developers-bg-color);
 }
-.developers-cards .card {
+.developers-item {
   background-color: var(--white-bg-color);
 }
 
 /* Footer */
 .footer {
+  background-color: var(--secondary-bg-color);
+}
+.ftr {
   color: var(--partlogo-text-color-footer);
 }
-.address {
+.address-map {
   color: var(--addresse-text-color);
 }
-.contacts {
-  color: var(--contacts-text-color);
+.footer-contact {
+  color: var(--footer-contacts-text-color);
 }
 
 /* Стили страницы Портфолио */
 
 /* Products */
-.products-list .card {
+.products-item {
   background-color: var(--product-card-bg-color);
 }
