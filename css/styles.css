@@ -83,6 +83,7 @@ p {
 }
 /* Buttons */
 .hero-button {
+  cursor: pointer;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -93,6 +94,7 @@ p {
   letter-spacing: 0.06em;
 }
 .button {
+  cursor: pointer;
   background-color: var(--button-bg-color);
   color: var(--primary-text-color);
   font-family: inherit;
