@@ -142,9 +142,9 @@ p {
 }
 
 /* Main */
-main {
+/* main {
   background-color: var(--primary-bg-color);
-}
+} */
 
 /* Hero */
 .hero {
@@ -208,9 +208,9 @@ main {
 /* -----Стили страницы Портфолио----- */
 
 /* Products */
-.portfolio {
+/* .portfolio {
   background-color: var(--primary-bg-color);
-}
+} */
 .products-item {
   background-color: var(--product-card-bg-color);
 }
