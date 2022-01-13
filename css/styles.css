@@ -33,14 +33,14 @@
   --accent-color: #2196f3;
   --developers-bg-color: #f5f4fa;
   --white-bg-color: #ffffff;
-  --product-card-bg-color: #eeeeee;
+  --product-card-bg-color: #ffffff;
   --button-bg-color: #f5f4fa;
 }
 
 /* Общие свойства */
 
 body {
-  background-color: var(--primary-bg-color);
+  background-color: var(--white-bg-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -142,6 +142,9 @@ p {
 }
 
 /* Main */
+main {
+  background-color: var(--primary-bg-color);
+}
 
 /* Hero */
 .hero {
@@ -205,6 +208,9 @@ p {
 /* -----Стили страницы Портфолио----- */
 
 /* Products */
+.portfolio {
+  background-color: var(--primary-bg-color);
+}
 .products-item {
   background-color: var(--product-card-bg-color);
 }
